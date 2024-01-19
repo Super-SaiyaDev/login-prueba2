@@ -13,7 +13,7 @@ const Tabla = () => {
 
   const editarDataBase = (id) => {
     axios
-      .put(`http://localhost:3000/api/editar/${id}`)
+      .post(`http://localhost:3000/api/editar/${id}`)
       .then((res) => console.log(res.data))
       .catch((err) => console.error(err));
   };

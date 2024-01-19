@@ -105,7 +105,7 @@ app.get("/api", (req, res) => {
   );
 });
 
-app.put("/api/editar/:id", (req, res) => {
+app.post("/api/editar/:id", (req, res) => {
   res.json({ Status: `http://localhost:3000/${req.param.id}` });
 });
 
