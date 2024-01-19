@@ -1,0 +1,21 @@
+/* App.css */
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+  }
+  
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+  }
+  
