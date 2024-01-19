@@ -97,7 +97,8 @@ app.post("/login", (req, res) => {
 
 app.get("/api", (req, res) => {
   db.query(
-    "SELECT * FROM usuario INNER JOIN rol ON usuario.id_rol = rol.id_rol INNER JOIN permisos ON rol.id_permiso = permisos.id_permiso ORDER BY usuario.id ASC;", (err, data) => {
+    "SELECT * FROM usuario INNER JOIN rol ON usuario.id_rol = rol.id_rol INNER JOIN permisos ON rol.id_permiso = permisos.id_permiso ORDER BY usuario.id ASC;",
+    (err, data) => {
       if (err) throw err;
       res.json(data);
     }
@@ -105,7 +106,7 @@ app.get("/api", (req, res) => {
 });
 
 app.put("/api/editar/:id", (req, res) => {
-  res.json({ Status: `datos actualizados corecctamente ${req.param.id}` });
+  res.json({ Status: `http://localhost:3000/${req.param.id}` });
 });
 
 app.delete("/api/eliminar/:id", (req, res) => {
